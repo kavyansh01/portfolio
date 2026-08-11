@@ -60,10 +60,10 @@ export default function Contact() {
         </div>
 
         <div className="contact-socials reveal-blur">
-          <a href="#" className="social-brutal" onClick={(e) => { e.preventDefault(); alert('GitHub link coming soon!'); }}>GITHUB</a>
+          <a href="https://github.com/kavyansh01" className="social-brutal" target="_blank" rel="noopener noreferrer">GITHUB</a>
           <a href="#" className="social-brutal" onClick={(e) => { e.preventDefault(); alert('LinkedIn link coming soon!'); }}>LINKEDIN</a>
           <a href="#" className="social-brutal" onClick={(e) => { e.preventDefault(); alert('X.com link coming soon!'); }}>X.COM</a>
-          <a href="https://www.fiverr.com/s/WE4WZL5" className="social-brutal" target="_blank" rel="noopener noreferrer">FIVERR</a>
+          <a href="https://www.fiverr.com/s/bd4AR71" className="social-brutal" target="_blank" rel="noopener noreferrer">FIVERR</a>
         </div>
       </div>
     </section>

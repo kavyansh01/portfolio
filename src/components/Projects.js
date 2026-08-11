@@ -10,7 +10,7 @@ const projects = [
     description: 'A modern restaurant website with online menu, table reservations, and a seamless mobile experience.',
     screenshot: '/images/ss-novabites.png',
     liveLink: '/projects/novabites',
-    githubLink: '#',
+    githubLink: 'https://github.com/kavyansh01/portfolio',
   },
   {
     title: 'CloudSync',
@@ -19,7 +19,7 @@ const projects = [
     description: 'A team collaboration dashboard with real-time analytics, task management, and data visualizations.',
     screenshot: '/images/ss-cloudsync.png',
     liveLink: '/projects/cloudsync',
-    githubLink: '#',
+    githubLink: 'https://github.com/kavyansh01/portfolio',
   },
   {
     title: 'LuxeCart',
@@ -28,7 +28,7 @@ const projects = [
     description: 'A premium e-commerce platform for luxury goods with secure payments and optimized checkout flow.',
     screenshot: '/images/ss-luxecart.png',
     liveLink: '/projects/luxecart',
-    githubLink: '#',
+    githubLink: 'https://github.com/kavyansh01/portfolio',
   },
   {
     title: 'GreenSpace',
@@ -37,7 +37,7 @@ const projects = [
     description: 'A real estate listing platform with advanced search, interactive maps, and agent contact system.',
     screenshot: '/images/ss-greenspace.png',
     liveLink: '/projects/greenspace',
-    githubLink: '#',
+    githubLink: 'https://github.com/kavyansh01/portfolio',
   },
 ];
 
@@ -77,7 +77,7 @@ export default function Projects() {
                 </div>
                 <div className="project-card-links">
                   <a href={project.liveLink} className="project-link-brutal">LIVE DEMO ↗</a>
-                  <a href="#" className="project-link-brutal" onClick={(e) => { e.preventDefault(); alert('GitHub link coming soon!'); }}>GITHUB →</a>
+                  <a href={project.githubLink || 'https://github.com/kavyansh01/portfolio'} className="project-link-brutal" target="_blank" rel="noopener noreferrer">GITHUB →</a>
                 </div>
               </div>
 
