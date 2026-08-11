@@ -1,13 +1,5 @@
-/* =============================================================
-   BRUTALIST PORTFOLIO — DESIGN SYSTEM
-   Inspired by bajkamalsingh.me
-   Colors: Cream / Navy / Electric Blue
-   Typography: Bebas Neue / Inter / Schoolbell / DM Mono
-   ============================================================= */
 
-/* ---- Google Fonts imported via layout.js ---- */
 
-/* ---- CSS Variables ---- */
 :root {
   --beige: #F4EFE6;
   --beige-dark: #E5DFC8;
@@ -24,12 +16,11 @@
   --transition-smooth: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
   overflow-x: hidden;
-  scroll-behavior: auto; /* Lenis handles smooth */
+  scroll-behavior: auto; 
 }
 
 body {
@@ -47,7 +38,6 @@ body {
 img { max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; }
 
-/* ---- Custom Cursor ---- */
 @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
   body.custom-cursor-active,
   body.custom-cursor-active a,
@@ -89,14 +79,12 @@ a { text-decoration: none; color: inherit; }
   .custom-cursor, .custom-cursor-follower { display: none !important; }
 }
 
-/* ---- Container ---- */
 .container-brutal {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(20px, 4vw, 60px);
 }
 
-/* ---- Preloader ---- */
 .preloader {
   position: fixed;
   inset: 0;
@@ -148,7 +136,6 @@ a { text-decoration: none; color: inherit; }
   transform: translateY(0);
 }
 
-/* ---- Reveal Animations ---- */
 .reveal-text {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   transform: translateY(20px);
@@ -184,7 +171,6 @@ a { text-decoration: none; color: inherit; }
 .reveal-delay-3 { transition-delay: 0.45s !important; }
 .reveal-delay-4 { transition-delay: 0.6s !important; }
 
-/* Fallback: auto-reveal after 2s if JS hasn't kicked in */
 @keyframes auto-reveal {
   to {
     clip-path: polygon(0 -20%, 100% -20%, 100% 120%, 0 120%);
@@ -214,7 +200,6 @@ a { text-decoration: none; color: inherit; }
   animation-delay: 2.5s;
 }
 
-/* ---- Section Commons ---- */
 .section-overline {
   font-family: var(--font-hand);
   font-size: clamp(11px, 1vw, 14px);
@@ -241,7 +226,6 @@ a { text-decoration: none; color: inherit; }
   color: transparent;
 }
 
-/* ---- Blueprint Grid BG ---- */
 .hero-grid-bg {
   position: absolute;
   inset: 0;
@@ -253,7 +237,6 @@ a { text-decoration: none; color: inherit; }
   z-index: 0;
 }
 
-/* ---- Noise Texture Overlay ---- */
 .hero-noise {
   position: absolute;
   inset: 0;
@@ -266,7 +249,6 @@ a { text-decoration: none; color: inherit; }
   mix-blend-mode: multiply;
 }
 
-/* ---- Floating Gradient Orbs ---- */
 .hero-orb {
   position: absolute;
   border-radius: 50%;
@@ -318,7 +300,6 @@ a { text-decoration: none; color: inherit; }
   100% { transform: translate(50px, 20px) scale(1.15); }
 }
 
-/* ---- Geometric Decorations ---- */
 .hero-geo {
   position: absolute;
   pointer-events: none;
@@ -394,9 +375,6 @@ a { text-decoration: none; color: inherit; }
   .hero-orb-3 { display: none; }
 }
 
-/* ============================================
-   HERO
-   ============================================ */
 .hero-brutal {
   position: relative;
   min-height: 100vh;
@@ -425,7 +403,6 @@ a { text-decoration: none; color: inherit; }
 .hero-left { position: relative; }
 .hero-right { position: relative; }
 
-/* ---- Code Editor Mockup ---- */
 .code-mockup {
   border: 3px solid var(--navy);
   box-shadow: 12px 12px 0 var(--navy);
@@ -550,7 +527,6 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 60px;
 }
 
-/* ---- Brutalist Buttons ---- */
 .btn-brutal-primary {
   display: inline-block;
   font-family: var(--font-body);
@@ -594,7 +570,6 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 8px 8px 0 var(--accent);
 }
 
-/* ---- Scroll Indicator ---- */
 .hero-scroll-indicator {
   display: flex;
   flex-direction: column;
@@ -618,7 +593,6 @@ a { text-decoration: none; color: inherit; }
   50% { opacity: 1; transform: scaleY(1); }
 }
 
-/* ---- Marquee ---- */
 .marquee-wrap {
   overflow: hidden;
   border-top: var(--border-w) solid var(--navy);
@@ -657,9 +631,6 @@ a { text-decoration: none; color: inherit; }
   100% { transform: translateX(0); }
 }
 
-/* ============================================
-   ABOUT — BRUTALIST SPLIT
-   ============================================ */
 .about-brutal {
   padding: clamp(80px, 10vh, 120px) 0;
   background: var(--beige);
@@ -705,7 +676,6 @@ a { text-decoration: none; color: inherit; }
   color: rgba(5, 16, 36, 0.75);
 }
 
-/* ---- Evidence Stamps ---- */
 .stamps-row {
   display: flex;
   gap: 12px;
@@ -761,7 +731,6 @@ a { text-decoration: none; color: inherit; }
   text-align: center;
 }
 
-/* ---- Tech Grid ---- */
 .tech-brutal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -794,9 +763,6 @@ a { text-decoration: none; color: inherit; }
   flex-shrink: 0;
 }
 
-/* ============================================
-   SERVICES — STACKING CARDS
-   ============================================ */
 .services-brutal {
   padding: clamp(80px, 10vh, 120px) 0;
   background: var(--beige);
@@ -883,9 +849,6 @@ a { text-decoration: none; color: inherit; }
   color: var(--beige);
 }
 
-/* ============================================
-   PROJECTS — ACCORDION STACK
-   ============================================ */
 .projects-brutal {
   padding: clamp(80px, 10vh, 120px) 0;
   background: var(--navy);
@@ -1047,9 +1010,6 @@ a { text-decoration: none; color: inherit; }
   transform: scale(1.03);
 }
 
-/* ============================================
-   CONTACT — GIANT CTA
-   ============================================ */
 .contact-brutal {
   padding: clamp(80px, 12vh, 140px) 0 clamp(140px, 18vh, 200px) 0;
   background: var(--beige);
@@ -1123,9 +1083,6 @@ a { text-decoration: none; color: inherit; }
   transform: translate(-2px, -2px);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
 .footer-brutal {
   border-top: var(--border-w) solid var(--navy);
   padding: 20px 0;
@@ -1153,9 +1110,6 @@ a { text-decoration: none; color: inherit; }
   color: rgba(5, 16, 36, 0.5);
 }
 
-/* ============================================
-   BOTTOM NAVBAR (Fixed)
-   ============================================ */
 .bnav-container {
   position: fixed;
   bottom: 24px;
@@ -1205,9 +1159,6 @@ a { text-decoration: none; color: inherit; }
   color: var(--beige);
 }
 
-/* ============================================
-   TESTIMONIALS
-   ============================================ */
 .testimonials-brutal {
   padding: clamp(80px, 10vh, 120px) 0;
   background: var(--beige);
@@ -1291,7 +1242,6 @@ a { text-decoration: none; color: inherit; }
   color: rgba(5, 16, 36, 0.6);
 }
 
-/* ============================================\n   CONTACT — Process Steps + Email Block\n   ============================================ */
 .contact-email-block {
   display: flex;
   flex-direction: column;
@@ -1353,9 +1303,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 300;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
 @media (max-width: 768px) {
   .about-split {
     grid-template-columns: 1fr;
