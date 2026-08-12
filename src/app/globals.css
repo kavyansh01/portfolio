@@ -1374,3 +1374,75 @@ a { text-decoration: none; color: inherit; }
     font-size: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  .bnav-container {
+    bottom: 12px;
+    width: 95vw;
+    max-width: 95vw;
+  }
+
+  .bnav-bar {
+    padding: 4px;
+    box-shadow: 4px 4px 0 var(--navy);
+    border-width: 2px;
+  }
+
+  .bnav-item {
+    padding: 8px 9px;
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-badge-brutal {
+    top: 10px !important;
+    left: 10px !important;
+    font-size: 9px !important;
+    padding: 4px 8px !important;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-brutal-primary,
+  .btn-brutal-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .social-brutal {
+    padding: 10px 16px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tech-brutal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-brutal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-two-col {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+  }
+}
+
+button, a, input, select, textarea, .bnav-item, .social-brutal, .btn-brutal-primary, .btn-brutal-secondary {
+  touch-action: manipulation;
+}
+
+.hero-orb, .marquee-track, .service-card-brutal, .project-card-brutal, .testimonial-card-brutal {
+  will-change: transform;
+  transform: translateZ(0);
+}
