@@ -31,10 +31,10 @@ export default function Contact() {
         </p>
 
         <div className="contact-email-block reveal-blur">
-          <a href="mailto:kavyansh986@gmail.com" className="contact-email">
+          <a href="mailto:kavyanshworks@gmail.com" className="contact-email">
             say hi before overthinking it &rarr;
           </a>
-          <span className="contact-email-actual">kavyansh986@gmail.com</span>
+          <span className="contact-email-actual">kavyanshworks@gmail.com</span>
         </div>
 
         <div className="contact-process reveal-blur">
